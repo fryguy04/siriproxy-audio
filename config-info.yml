@@ -1,0 +1,4 @@
+    - name: 'Audio'
+      path: '~/plugins/siriproxy-audio'
+      audioRooms:   {'basement': 0, 'bedroom': 1, 'kitchen': 2}
+      audioSources: {'pandora': 0, 'air play': 1, 'tv': 2 }
