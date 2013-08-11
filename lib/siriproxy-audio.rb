@@ -2,8 +2,9 @@ require 'cora'
 require 'siri_objects'
 require 'pp'
 
-#######
-######
+# Examples: 
+#   Listen to Pandora Everywhere
+#   Play iTunes in Basement
 
 class SiriProxy::Plugin::Audio < SiriProxy::Plugin
   attr_accessor :roomHash
@@ -18,7 +19,6 @@ class SiriProxy::Plugin::Audio < SiriProxy::Plugin
   end
 
 
-  # Play pandora in the kitchen
   listen_for /(?:Listen to|Play) (.+) (?:in|and)(?: the)? (.+)/i do |source,room|
 
     puts @aRooms
